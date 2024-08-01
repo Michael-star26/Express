@@ -1,0 +1,54 @@
+<div class="m-5">
+    <div class="ui teal card d-flex m-auto p-4">
+        <div class="ui  teal pointing below label d-flex m-auto">Register to proceed</div>
+        <form action="http://localhost:3000/form_post" method="POST" role="form" class="ui mini teal  fluid form">
+            <div class="ui required info field">
+                <div class="d-flex">
+                    <label for="name" class="ui mini warning pointing below basic label">Enter name</label>
+                </div>
+                <div class="ui tiny info left icon input">
+                    <input type="text" name="name" id="name" placeholder="Your name">
+                    <i class="ui user icon"></i>
+                </div>
+            </div>
+
+            <div class="ui required info field">
+                <div class="d-flex">
+                    <label for="email" class="ui mini teal pointing below basic label">Enter Email</label>
+                </div>
+                <div class="ui tiny info left icon input">
+                    <input type="email" name="email" id="email" placeholder="Your email">
+                    <i class="ui envelope icon"></i>
+                </div>
+            </div>
+
+            <div class="ui required info field">
+                <div class="d-flex">
+                    <label for="year" class="ui mini teal pointing below basic label">Enter year</label>
+                </div>
+                <div class="ui tiny info left icon input">
+                    <input type="month" name="yob" id="year" placeholder="Your year">
+                    <i class="ui calendar alternate icon"></i>
+                </div>
+            </div>
+
+            <div class="mb-4">
+                <div><label for="invisible" class="ui mini teal pointing below basic label">Upload Profile</label></div>
+                <input type="file" id="invisible" class="ui invisible file input" name="post_photo">
+                <label for="invisible" class="ui teal mini icon button">
+                    <i class="file icon"></i>
+                    Upload Image
+                </label>
+            </div>
+
+            <div class="d-flex m-auto">
+                <button type="submit" class="ui mini positive button m-auto d-flex">Register</button>
+            </div>
+            <div class="ui horizontal divider">Or</div>
+            <div class="d-flex m-auto">
+                <p>Have an account?<span><a href="/login">Login</a></span></p>
+            </div>
+        </form>
+    </div>
+</div>
+
