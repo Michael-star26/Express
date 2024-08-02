@@ -12,7 +12,7 @@ app.use(require('cors')())
 const dotenv = require('dotenv').config()
 
 const session = require('express-session')
-app.use(require('cookie-parser')(credentials.cookieSecret))
+//app.use(require('cookie-parser')(credentials.cookieSecret))
 app.use(session({
     secret:process.env.SESSION_SECRET,
     resave:true,
