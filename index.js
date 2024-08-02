@@ -10,7 +10,7 @@ app.use(bodyParser.json())
 app.use(bodyParser.urlencoded({extended:true}))
 app.use(require('cors')())
 const dotenv = require('dotenv').config()
-var credentials=require('./credentials.js')
+
 const session = require('express-session')
 app.use(require('cookie-parser')(credentials.cookieSecret))
 app.use(session({
